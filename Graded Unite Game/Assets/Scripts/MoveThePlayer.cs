@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class MoveThePlayer : MonoBehaviour
 {
+    //add veribles
     public string left;
     public string right;
     public string Jump;
@@ -19,17 +20,17 @@ public class MoveThePlayer : MonoBehaviour
     // move player
     void Update()
     {
-        if (Input.GetKey(Up))
+        if (Input.GetKey(Jump))
         {
             this.transform.Rotate (new Vector3(0f, 5f, 0f) * deltaTime * 1);
         }
 
-        if (Input.GetKey(Left))
+        if (Input.GetKey(left))
         {
             this.transform.Rotate(new Vector3(0f, 0f, 50f) * deltaTime);
         }
 
-        if (Input.GetKey(Right))
+        if (Input.GetKey(right))
         {
             this.transform.Rotate(new Vector3(0f, 0f, -50f) * deltaTime);
         }
