@@ -22,25 +22,25 @@ public class MoveThePlayer : MonoBehaviour
     {
         if (Input.GetKey(Jump))
         {
-            this.transform.Rotate (new Vector3(0f, 5f, 0f) * deltaTime * 1);
+           // this.transform.Rotate (new Vector3(0f, 5f, 0f) * deltaTime * 1);
         }
 
         if (Input.GetKey(left))
         {
-            this.transform.Rotate(new Vector3(0f, 0f, 50f) * deltaTime);
+          //  this.transform.Rotate(new Vector3(0f, 0f, 50f) * deltaTime);
         }
 
         if (Input.GetKey(right))
         {
-            this.transform.Rotate(new Vector3(0f, 0f, -50f) * deltaTime);
+          //  this.transform.Rotate(new Vector3(0f, 0f, -50f) * deltaTime);
         }
     }
 
     private void FixedUpdate()
     {
-        if (Input.GetKey(Up))
+       // if (Input.GetKey(Up))
         {
-            Rigidbody.AddForce(this.transform.up * 5);
+           Rigidbody.AddForce(this.transform.up * 5);
         }
     }
 }
