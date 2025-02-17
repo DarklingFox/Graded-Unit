@@ -18,27 +18,29 @@ public class MoveThePlayer : MonoBehaviour
 
     // Update is called once per frame
     // move player
-    void Update()
+    public void Update(float deltaTime, Vector3 move)
     {
         if (Input.GetKey(Jump))
         {
-           // this.transform.Rotate (new Vector3(0f, 5f, 0f) * deltaTime * 1);
+            this.transform.Rotate (new Vector3(0f, 5f, 0f) * deltaTime * 1);
         }
 
         if (Input.GetKey(left))
         {
-          //  this.transform.Rotate(new Vector3(0f, 0f, 50f) * deltaTime);
+            //this.transform.Rotate(new Vector3(0f, 0f, 50f) * deltaTime);
+            move = new Vector3(0f, 0.1f, 0f);
         }
 
         if (Input.GetKey(right))
         {
-          //  this.transform.Rotate(new Vector3(0f, 0f, -50f) * deltaTime);
+            this.transform.Rotate(new Vector3(0f, 0f, -50f) * deltaTime);
         }
+        this.transform.Translate(move);
     }
 
     private void FixedUpdate()
     {
-       // if (Input.GetKey(Up))
+        if (Input.GetKey(Jump))
         {
            Rigidbody.AddForce(this.transform.up * 5);
         }
