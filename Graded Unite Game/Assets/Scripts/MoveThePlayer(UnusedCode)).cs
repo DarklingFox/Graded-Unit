@@ -20,6 +20,7 @@ public class MoveThePlayer : MonoBehaviour
     // move player
     public void Update(float deltaTime, Vector3 move)
     {
+        //I know some of code just rotates sprite, just trying to get it to do something first
         if (Input.GetKey(Jump))
         {
             this.transform.Rotate (new Vector3(0f, 5f, 0f) * deltaTime * 1);
