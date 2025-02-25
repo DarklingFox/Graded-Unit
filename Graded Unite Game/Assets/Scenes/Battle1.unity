@@ -284,7 +284,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 412684748}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.22, y: 7.42, z: 0}
+  m_LocalPosition: {x: 4.22, y: 11.41, z: 0}
   m_LocalScale: {x: 0.2467, y: 0.2739, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -413,6 +413,7 @@ GameObject:
   - component: {fileID: 714081923}
   - component: {fileID: 714081922}
   - component: {fileID: 714081924}
+  - component: {fileID: 714081925}
   m_Layer: 0
   m_Name: Colosseum (Background)
   m_TagString: Untagged
@@ -508,6 +509,18 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &714081925
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 714081921}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e8def220eda9704b94491fed2f0c794, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &737796598
 GameObject:
   m_ObjectHideFlags: 0
@@ -884,7 +897,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5.0544887
+  orthographic size: 9.420411
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -909,7 +922,7 @@ Transform:
   m_GameObject: {fileID: 1362788981}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -10}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: -2.434145, y: 0.388645, z: 1.6364}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1094,7 +1107,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1609505885}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.49, y: 7.28, z: 0}
+  m_LocalPosition: {x: -4.49, y: 11.2, z: 0}
   m_LocalScale: {x: 0.25483817, y: 0.2493139, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1449,7 +1462,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 4
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -1490,9 +1503,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1972812383}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 06a703cd8d42ca644a3dee4abb1f01df, type: 3}
+  m_Script: {fileID: 11500000, guid: 753270efea18ea04593a17bc5393c2c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  left: a
+  right: d
+  Jump: w
+  Rigidbody: {fileID: 0}
 --- !u!1 &2018172300
 GameObject:
   m_ObjectHideFlags: 0
