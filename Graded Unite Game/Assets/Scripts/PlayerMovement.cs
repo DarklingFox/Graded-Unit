@@ -8,6 +8,7 @@ public class PlayerMovement : MonoBehaviour
     public string left = "a";
     public string right = "d";
     public string Jump = "w";
+    public float Speed = 0.0f;
     public Rigidbody2D Rigidbody;
 
     // Start is called before the first frame update
