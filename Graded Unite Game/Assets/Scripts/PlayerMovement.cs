@@ -8,7 +8,6 @@ public class PlayerMovement : MonoBehaviour
     public string left = "a";
     public string right = "d";
     public string Jump = "w";
-    public float Speed = 0.0f;
     public Rigidbody2D Rigidbody;
 
     // Start is called before the first frame update
@@ -21,31 +20,28 @@ public class PlayerMovement : MonoBehaviour
     // move player
     public void Update()
     {
+        // Vector variable
         Vector3 move = new Vector3(0, 0);
-        //I know some of code just rotates sprite, just trying to get it to do something first
-        if (Input.GetKey(Jump))
-        {
-            this.transform.Rotate(new Vector3(0f, 5f, 0f) * Time.deltaTime * 1);
-        }
 
+        //move left and right
         if (Input.GetKey(left))
         {
-            this.transform.Rotate(new Vector3(0f, 0f, 50f) * Time.deltaTime);
-            //move = new Vector3(0f, 0.1f, 0f);
+            move = new Vector3(-0.01f, 0f, 0f);
         }
 
         if (Input.GetKey(right))
         {
-            this.transform.Rotate(new Vector3(0f, 0f, -50f) * Time.deltaTime);
+            move = new Vector3(0.01f, 0f, 0f);
         }
-        //this.transform.Translate(move);
+        this.transform.Translate(move);
     }
 
     private void FixedUpdate()
     {
+        //alow player to jump
         if (Input.GetKey(Jump))
         {
-            Rigidbody.AddForce(this.transform.up * 5);
+            Rigidbody.AddForce(this.transform.up * 1/99);
         }
     }
 }
