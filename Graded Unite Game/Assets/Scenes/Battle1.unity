@@ -467,6 +467,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e8def220eda9704b94491fed2f0c794, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &758564985 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7973340589335633406, guid: 9d6dbb8c3433c554c9f996fa4476f9b0, type: 3}
+  m_PrefabInstance: {fileID: 7973340587839635875}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1224025137
 GameObject:
   m_ObjectHideFlags: 0
@@ -1142,6 +1147,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 974976288829738090, guid: 10c71fa09161eb144b4f70ffbe67bbc3, type: 3}
+      propertyPath: Rocket
+      value: 
+      objectReference: {fileID: 758564985}
+    - target: {fileID: 974976288829738090, guid: 10c71fa09161eb144b4f70ffbe67bbc3, type: 3}
+      propertyPath: lastFired
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6352913691023280017, guid: 10c71fa09161eb144b4f70ffbe67bbc3, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -1205,11 +1218,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7973340589335633404, guid: 9d6dbb8c3433c554c9f996fa4476f9b0, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.49
+      value: -7.46
       objectReference: {fileID: 0}
     - target: {fileID: 7973340589335633404, guid: 9d6dbb8c3433c554c9f996fa4476f9b0, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 11.2
+      value: -3.47
       objectReference: {fileID: 0}
     - target: {fileID: 7973340589335633404, guid: 9d6dbb8c3433c554c9f996fa4476f9b0, type: 3}
       propertyPath: m_LocalPosition.z
