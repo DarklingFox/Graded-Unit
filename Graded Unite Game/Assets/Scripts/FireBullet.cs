@@ -36,6 +36,7 @@ public class FireBullet : MonoBehaviour
                 firedBullet = Instantiate(Rocket, this.transform.position + (this.transform.up * 10), this.transform.rotation);
                 lastFired = Time.time;
             }
+            //move the rocket
             move = new Vector3(-0.01f, 0f, 0f);
         }
     }
