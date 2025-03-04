@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2177391189055822409}
   - component: {fileID: 2177391189055822408}
   - component: {fileID: 2177391189055822415}
-  - component: {fileID: 2177391189055822414}
+  - component: {fileID: -9084492791973562845}
   m_Layer: 0
   m_Name: Rocket
   m_TagString: Untagged
@@ -134,7 +134,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.72, y: 1.59}
   m_EdgeRadius: 0
---- !u!114 &2177391189055822414
+--- !u!114 &-9084492791973562845
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -146,8 +146,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bbe912c6fde9daf4bb4b3d0b847d8316, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Fire: f
-  lastFired: 3
-  RocketPrefab: {fileID: 2177391189055822413}
-  Rocketspawn: {fileID: 2177391189055822410}
   Speed: 3
