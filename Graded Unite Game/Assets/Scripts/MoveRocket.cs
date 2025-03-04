@@ -5,7 +5,10 @@ using UnityEngine;
 public class MoveRocket : MonoBehaviour
 {
     //Add Veriables 
-    public GameObject Rocket;
+    public string Fire = "f";
+    public float lastFired;
+    public GameObject RocketPrefab;
+    public Transform Rocketspawn;
     Rigidbody2D Rigidbody;
     public float Speed = 3;
 
@@ -14,18 +17,28 @@ public class MoveRocket : MonoBehaviour
     {
         //set component
         Rigidbody = this.GetComponent<Rigidbody2D>();
+
+        //initalise variables
+        lastFired = 0;
     }
 
     // Update is called once per frame
     void Update()
     {
         //add veriable
-        Vector3 move = new Vector3(0, 0);
+        //Vector3 move = new Vector3(0, 0);
 
-        //move rocket
-        //move = new Vector3(-0.01f, 0f, 0f);
-
-        var Rocket = Instantiate(RocketPrefab, Rocket)
+        //timer to not fire to quickly
+        if (Time.time > lastFired + 1)
+        {
+            //move rocket and spawn
+            if (Input.GetKey(Fire))
+            {
+                //learnd code from (School, 2025)
+                var Rocket = Instantiate(RocketPrefab, Rocketspawn.position, Rocketspawn.rotation);
+                Rocket.GetComponent<Rigidbody2D>().velocity = Rocketspawn.up * Speed;
+            }
+        }
     }
 
     //have rocket despawn on collision
