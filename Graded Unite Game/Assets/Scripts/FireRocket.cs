@@ -21,8 +21,6 @@ public class FireRocket : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //add veriable
-        //Vector3 move = new Vector3(0, 0);
 
     }
 

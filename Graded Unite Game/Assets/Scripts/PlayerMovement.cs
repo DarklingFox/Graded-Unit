@@ -12,7 +12,6 @@ public class PlayerMovement : MonoBehaviour
     public Rigidbody2D Rigidbody;
     public float lastFired;
     public GameObject RocketPrefab;
-    //public Transform Rocketspawn;
     public float Speed = 3;
 
     // Start is called before the first frame update
@@ -49,7 +48,6 @@ public class PlayerMovement : MonoBehaviour
             //move rocket and spawn
             if (Input.GetKey(Fire))
             {
-                //learnd code from (School, 2025)
                 var Rocket = Instantiate(RocketPrefab, this.transform.position + this.transform.right * 1.5f, this.transform.rotation);
                 Rocket.GetComponent<Rigidbody2D>().velocity = transform.right * Speed;
                 lastFired = Time.time;
