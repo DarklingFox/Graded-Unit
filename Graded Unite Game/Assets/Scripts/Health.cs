@@ -8,13 +8,13 @@ public class Health : MonoBehaviour
     //Add variables
     public Sprite Healthbar0, Healthbar1, Healthbar2, Healthbar3, Healthbar4, Healthbar5, Healthbar6, Healthbar7, Healthbar8, Healthbar9, Healthbar10;
     Image HealthSprite;
+    public int StartingHealth; 
 
     // Start is called before the first frame update
     void Start()
     {
+        //get component 
         HealthSprite = GetComponent<Image>();
-
-        
     }
 
     // Update is called once per frame
@@ -25,6 +25,7 @@ public class Health : MonoBehaviour
 
     public void SetSprite(CurrentHealthStage Healthleft)
     {
+        //set sprite by having the int value equal correct sprite
         switch (Healthleft)
         {
             case CurrentHealthStage.Health0:
@@ -65,6 +66,7 @@ public class Health : MonoBehaviour
 
    public enum CurrentHealthStage
     {
+        //To give sprite an int value
         Health0 = 0,
         Health1 = 1,
         Health2 = 2,

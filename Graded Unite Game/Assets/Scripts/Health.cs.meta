@@ -3,7 +3,18 @@ guid: a34668b084e8c314bbecc4bc7aff1937
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - Healthbar0: {fileID: -1662032444, guid: 7a3f17c65c653be488ba6bcdebd053ff, type: 3}
+  - Healthbar1: {fileID: -1610149775, guid: 7a3f17c65c653be488ba6bcdebd053ff, type: 3}
+  - Healthbar2: {fileID: -1877529709, guid: 7a3f17c65c653be488ba6bcdebd053ff, type: 3}
+  - Healthbar3: {fileID: 461730107, guid: 7a3f17c65c653be488ba6bcdebd053ff, type: 3}
+  - Healthbar4: {fileID: -147648735, guid: 7a3f17c65c653be488ba6bcdebd053ff, type: 3}
+  - Healthbar5: {fileID: 1911888799, guid: 7a3f17c65c653be488ba6bcdebd053ff, type: 3}
+  - Healthbar6: {fileID: 860800666, guid: 7a3f17c65c653be488ba6bcdebd053ff, type: 3}
+  - Healthbar7: {fileID: 1503978790, guid: 7a3f17c65c653be488ba6bcdebd053ff, type: 3}
+  - Healthbar8: {fileID: 1948341064, guid: 7a3f17c65c653be488ba6bcdebd053ff, type: 3}
+  - Healthbar9: {fileID: -1419332953, guid: 7a3f17c65c653be488ba6bcdebd053ff, type: 3}
+  - Healthbar10: {fileID: 964636689, guid: 7a3f17c65c653be488ba6bcdebd053ff, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

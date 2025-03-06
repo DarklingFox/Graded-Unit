@@ -781,6 +781,7 @@ GameObject:
   - component: {fileID: 1368898007}
   - component: {fileID: 1368898006}
   - component: {fileID: 1368898005}
+  - component: {fileID: 1368898009}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Wall
@@ -871,6 +872,29 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1368898009
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1368898004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a34668b084e8c314bbecc4bc7aff1937, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Healthbar0: {fileID: -1662032444, guid: 7a3f17c65c653be488ba6bcdebd053ff, type: 3}
+  Healthbar1: {fileID: -1610149775, guid: 7a3f17c65c653be488ba6bcdebd053ff, type: 3}
+  Healthbar2: {fileID: -1877529709, guid: 7a3f17c65c653be488ba6bcdebd053ff, type: 3}
+  Healthbar3: {fileID: 461730107, guid: 7a3f17c65c653be488ba6bcdebd053ff, type: 3}
+  Healthbar4: {fileID: -147648735, guid: 7a3f17c65c653be488ba6bcdebd053ff, type: 3}
+  Healthbar5: {fileID: 1911888799, guid: 7a3f17c65c653be488ba6bcdebd053ff, type: 3}
+  Healthbar6: {fileID: 860800666, guid: 7a3f17c65c653be488ba6bcdebd053ff, type: 3}
+  Healthbar7: {fileID: 1503978790, guid: 7a3f17c65c653be488ba6bcdebd053ff, type: 3}
+  Healthbar8: {fileID: 1948341064, guid: 7a3f17c65c653be488ba6bcdebd053ff, type: 3}
+  Healthbar9: {fileID: -1419332953, guid: 7a3f17c65c653be488ba6bcdebd053ff, type: 3}
+  Healthbar10: {fileID: 964636689, guid: 7a3f17c65c653be488ba6bcdebd053ff, type: 3}
 --- !u!1 &1888689068
 GameObject:
   m_ObjectHideFlags: 0
