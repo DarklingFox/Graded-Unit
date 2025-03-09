@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 1058870272177628751}
   - component: {fileID: 3261195062276831782}
   - component: {fileID: 7967437206657264238}
+  - component: {fileID: 381652617651442892}
   m_Layer: 0
   m_Name: Player Mech
   m_TagString: Untagged
@@ -154,3 +155,18 @@ MonoBehaviour:
   lastFired: 1
   RocketPrefab: {fileID: 2177391189055822413, guid: 9d6dbb8c3433c554c9f996fa4476f9b0, type: 3}
   Speed: 3
+--- !u!114 &381652617651442892
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 622055608747212993}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4ed1206e6eb4d749b16fc5f9d1d0296, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CurrentHealth: 0
+  MaxHealth: 0
+  HealthbarPrefab: {fileID: 0}

@@ -24,18 +24,16 @@ public class HealthManager : MonoBehaviour
         
     }
 
-    //Display Health
+    //Display current Health
     public void DrawHeath()
     {
         float MaxHealthRemainder = MaxHealth % 2;
         int HealthCreated = (int)((MaxHealth / 2) + MaxHealthRemainder);
 
         createHealth();
-
-       // for (int i = 0; i < Healthbar.Count; i++)
-        {
-            //int HealtheRemainder = (int)Mathf.Clamp(CurrentHealth - (i * 2), 0, 10);
-        }
+        
+        int HealtheRemainder = (int)Mathf.Clamp(CurrentHealth - (1 * 2), 0, 10);
+        
     }
 
     // Create Health bar for Player and Enemy
@@ -51,7 +49,7 @@ public class HealthManager : MonoBehaviour
 
     public void DealDamage(float Amount)
     {
-        CurrentHealth = Amount;
+        CurrentHealth = CurrentHealth - Amount;
 
     }
 
@@ -60,7 +58,7 @@ public class HealthManager : MonoBehaviour
     {
         if (collision.gameObject.tag == "Rocket")
         {
-            //collision.gameObject.GetComponent.DealDamage(1);
+             DealDamage(1);
         }
 
     }

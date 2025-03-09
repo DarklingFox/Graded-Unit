@@ -166,6 +166,7 @@ MonoBehaviour:
   Healthbar8: {fileID: 1948341064, guid: 7a3f17c65c653be488ba6bcdebd053ff, type: 3}
   Healthbar9: {fileID: -1419332953, guid: 7a3f17c65c653be488ba6bcdebd053ff, type: 3}
   Healthbar10: {fileID: 964636689, guid: 7a3f17c65c653be488ba6bcdebd053ff, type: 3}
+  StartingHealth: 0
 --- !u!212 &127799578
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -288,6 +289,7 @@ GameObject:
   - component: {fileID: 310362922}
   - component: {fileID: 310362925}
   - component: {fileID: 310362924}
+  - component: {fileID: 310362926}
   m_Layer: 0
   m_Name: Enemy 1
   m_TagString: Enemy
@@ -409,6 +411,21 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &310362926
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 310362921}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4ed1206e6eb4d749b16fc5f9d1d0296, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CurrentHealth: 10
+  MaxHealth: 10
+  HealthbarPrefab: {fileID: 0}
 --- !u!1 &412684748
 GameObject:
   m_ObjectHideFlags: 0
@@ -895,6 +912,7 @@ MonoBehaviour:
   Healthbar8: {fileID: 1948341064, guid: 7a3f17c65c653be488ba6bcdebd053ff, type: 3}
   Healthbar9: {fileID: -1419332953, guid: 7a3f17c65c653be488ba6bcdebd053ff, type: 3}
   Healthbar10: {fileID: 964636689, guid: 7a3f17c65c653be488ba6bcdebd053ff, type: 3}
+  StartingHealth: 0
 --- !u!1 &1888689068
 GameObject:
   m_ObjectHideFlags: 0
@@ -1071,6 +1089,7 @@ MonoBehaviour:
   Healthbar8: {fileID: 0}
   Healthbar9: {fileID: 0}
   Healthbar10: {fileID: 0}
+  StartingHealth: 0
 --- !u!212 &1889382335
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1280,6 +1299,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 381652617651442892, guid: 10c71fa09161eb144b4f70ffbe67bbc3, type: 3}
+      propertyPath: MaxHealth
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 381652617651442892, guid: 10c71fa09161eb144b4f70ffbe67bbc3, type: 3}
+      propertyPath: CurrentHealth
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 622055608747212993, guid: 10c71fa09161eb144b4f70ffbe67bbc3, type: 3}
       propertyPath: m_Name
       value: Player Mech
