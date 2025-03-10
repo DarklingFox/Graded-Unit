@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+//learnd to do heath code from (BMo, 2022)
 public class Health : MonoBehaviour
 {
     //Add variables
