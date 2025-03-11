@@ -42,7 +42,7 @@ public class EnemyAI : MonoBehaviour
         if (Time.time > lastFired + 1)
         {
             //move rocket and spawn
-            var Fireball = Instantiate(FireballPrefab, this.transform.position + this.transform.right * -1.5f, this.transform.rotation);
+            var Fireball = Instantiate(FireballPrefab, this.transform.position + this.transform.right * 1.5f, this.transform.rotation);
             Fireball.GetComponent<Rigidbody2D>().velocity = transform.right * Speed;
             lastFired = Time.time;
             
