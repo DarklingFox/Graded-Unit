@@ -522,7 +522,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 7.173723
+  orthographic size: 14.0535755
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -1049,6 +1049,10 @@ PrefabInstance:
       propertyPath: CurrentHealth
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 381652617651442892, guid: 10c71fa09161eb144b4f70ffbe67bbc3, type: 3}
+      propertyPath: HealthbarPrefab
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 622055608747212993, guid: 10c71fa09161eb144b4f70ffbe67bbc3, type: 3}
       propertyPath: m_Name
       value: Player Mech
@@ -1117,11 +1121,19 @@ PrefabInstance:
     - target: {fileID: 228995965159682822, guid: b7589dfdca86a9340b57a3570138a60f, type: 3}
       propertyPath: FireballPrefab
       value: 
-      objectReference: {fileID: 448384592659847983, guid: 480a7fcc0018aee459e84cdb690a371e, type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 8565308336116028921, guid: b7589dfdca86a9340b57a3570138a60f, type: 3}
       propertyPath: m_GravityScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8565308336116028922, guid: b7589dfdca86a9340b57a3570138a60f, type: 3}
+      propertyPath: CurrentHealth
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8565308336116028922, guid: b7589dfdca86a9340b57a3570138a60f, type: 3}
+      propertyPath: HealthbarPrefab
+      value: 
+      objectReference: {fileID: 802100439001344914, guid: 5fd8301a53ece344c9282bac1219d7a8, type: 3}
     - target: {fileID: 8565308336116028925, guid: b7589dfdca86a9340b57a3570138a60f, type: 3}
       propertyPath: m_Name
       value: Enemy 1
