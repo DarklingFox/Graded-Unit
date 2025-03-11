@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FireRocket : MonoBehaviour
+public class FireFireball : MonoBehaviour
 {
     //Add Veriables 
     Rigidbody2D Rigidbody;
@@ -24,7 +24,7 @@ public class FireRocket : MonoBehaviour
     //have rocket despawn on collision
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "Enemy")
+        if (collision.gameObject.tag == "Player")
         {
             Destroy(this.gameObject);
         }
@@ -40,3 +40,4 @@ public class FireRocket : MonoBehaviour
         }
     }
 }
+
