@@ -28,8 +28,7 @@ public class HealthManager : MonoBehaviour
     //Display current Health
     public void DrawHeath()
     {
-        //float MaxHealthRemainder = MaxHealth % 2;
-        //int HealthCreated = (int)((MaxHealth / 2) + MaxHealthRemainder);
+        //this is to set redraw when teke damege Health
         if (CurrentHealth == 0 )
         {
             GameObject newHealthbar = Instantiate(HealthbarPrefab);

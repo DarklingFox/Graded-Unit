@@ -165,4 +165,4 @@ MonoBehaviour:
   Rigidbody: {fileID: 0}
   lastFired: 0
   FireballPrefab: {fileID: 448384592659847983, guid: 480a7fcc0018aee459e84cdb690a371e, type: 3}
-  Speed: 3
+  Speed: -3

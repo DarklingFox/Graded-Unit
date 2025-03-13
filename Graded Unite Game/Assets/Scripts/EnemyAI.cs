@@ -41,10 +41,13 @@ public class EnemyAI : MonoBehaviour
         //timer to not fire to quickly
         if (Time.time > lastFired + 1)
         {
-            //move rocket and spawn
-            var Fireball = Instantiate(FireballPrefab, this.transform.position + this.transform.right * -1.5f, this.transform.rotation);
-            Fireball.GetComponent<Rigidbody2D>().velocity = transform.right * Speed;
-            lastFired = Time.time;
+            if (Random.Range(1, 200) == 1)
+            {
+                //move rocket and spawn
+                var Fireball = Instantiate(FireballPrefab, this.transform.position + this.transform.right * -1.5f, this.transform.rotation);
+                Fireball.GetComponent<Rigidbody2D>().velocity = transform.right * Speed;
+                lastFired = Time.time;
+            }
             
         }
     }

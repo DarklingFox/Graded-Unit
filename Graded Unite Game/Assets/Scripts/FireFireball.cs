@@ -6,7 +6,7 @@ public class FireFireball : MonoBehaviour
 {
     //Add Veriables 
     Rigidbody2D Rigidbody;
-    public float Speed = 3;
+    public float Speed = -3;
 
     // Start is called before the first frame update
     void Start()
