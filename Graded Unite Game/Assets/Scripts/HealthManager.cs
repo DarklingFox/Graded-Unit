@@ -20,7 +20,7 @@ public class HealthManager : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {
+    {  
         //Call Method
         DrawHeath();
     }

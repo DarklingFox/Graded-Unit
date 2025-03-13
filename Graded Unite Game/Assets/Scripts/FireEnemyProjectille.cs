@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FireFireball : MonoBehaviour
+public class FireEnemyProjectille : MonoBehaviour
 {
     //Add Veriables 
     Rigidbody2D Rigidbody;

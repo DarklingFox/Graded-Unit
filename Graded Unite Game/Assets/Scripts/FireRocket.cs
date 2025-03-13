@@ -29,12 +29,12 @@ public class FireRocket : MonoBehaviour
             Destroy(this.gameObject);
         }
 
-        if (collision.gameObject.tag == "Wall")
+        else if (collision.gameObject.tag == "Wall")
         {
             Destroy(this.gameObject);
         }
 
-        if (collision.gameObject.tag == "Projectille")
+        else if (collision.gameObject.tag == "Projectille")
         {
             Destroy(this.gameObject);
         }

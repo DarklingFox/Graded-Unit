@@ -7,7 +7,7 @@ public class EnemyAI : MonoBehaviour
     //add veribles
     public Rigidbody2D Rigidbody;
     public float lastFired;
-    public GameObject FireballPrefab;
+    public GameObject ProjectillePrefab;
     public float Speed = 3;
 
     // Start is called before the first frame update
@@ -43,10 +43,10 @@ public class EnemyAI : MonoBehaviour
         {
             if (Random.Range(1, 200) == 1)
             {
-                //move rocket and spawn
-                var Fireball = Instantiate(FireballPrefab, this.transform.position + this.transform.right * -1.5f, this.transform.rotation);
-                Fireball.GetComponent<Rigidbody2D>().velocity = transform.right * Speed;
-                lastFired = Time.time;
+                  //move rocket and spawn
+                  var Projectille = Instantiate(ProjectillePrefab, this.transform.position + this.transform.right * -1.5f, this.transform.rotation);
+                  Projectille.GetComponent<Rigidbody2D>().velocity = transform.right * Speed;
+                  lastFired = Time.time;
             }
             
         }
