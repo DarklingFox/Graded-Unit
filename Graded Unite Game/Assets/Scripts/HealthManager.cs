@@ -8,14 +8,11 @@ public class HealthManager : MonoBehaviour
     //add veriables
     public int CurrentHealth, MaxHealth;
     public GameObject HealthbarPrefab;
-    List<Health> HealthList = new List<Health>();
 
     // Start is called before the first frame update
     void Start()
     {
         CurrentHealth = MaxHealth - 10;
-
-
     }
 
     // Update is called once per frame
@@ -30,7 +27,7 @@ public class HealthManager : MonoBehaviour
     {
         HealthbarPrefab.GetComponent<Health>().SetSprite((Health.CurrentHealthStage)CurrentHealth);
 
-        //this large bit of code from erlyer attempt
+        //this large bit of code from earlier attempt
         //this is to set redraw when teke damege Health
         //if (CurrentHealth == 0 )
         //{
@@ -144,11 +141,12 @@ public class HealthManager : MonoBehaviour
         //    HealthbarPrefab.GetComponent<Health>().SetSprite((Health.CurrentHealthStage)CurrentHealth);
         //}
 
-        
+
     }
 
     public float DealDamage(int Amount)
     {
+        // damege calculation
         CurrentHealth = CurrentHealth + Amount;
 
         return CurrentHealth;
@@ -160,8 +158,7 @@ public class HealthManager : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Projectille"))
         {
-            DealDamage(1);
-            
+            DealDamage(1);      
         }
 
     }
