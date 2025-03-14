@@ -955,6 +955,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 381652617651442892, guid: 10c71fa09161eb144b4f70ffbe67bbc3, type: 3}
+      propertyPath: MaxHealth
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 622055608747212993, guid: 10c71fa09161eb144b4f70ffbe67bbc3, type: 3}
       propertyPath: m_Name
       value: Player Mech

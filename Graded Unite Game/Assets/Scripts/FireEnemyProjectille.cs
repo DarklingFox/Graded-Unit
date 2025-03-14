@@ -24,17 +24,17 @@ public class FireEnemyProjectille : MonoBehaviour
     //have rocket despawn on collision
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "Player")
+        if (collision.gameObject.CompareTag("Player"))
         {
             Destroy(this.gameObject);
         }
 
-        if (collision.gameObject.tag == "Wall")
+        if (collision.gameObject.CompareTag("Wall"))
         {
             Destroy(this.gameObject);
         }
 
-        if (collision.gameObject.tag == "Projectille")
+        if (collision.gameObject.CompareTag("Projectille"))
         {
             Destroy(this.gameObject);
         }

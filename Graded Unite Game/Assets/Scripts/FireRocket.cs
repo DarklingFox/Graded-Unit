@@ -24,17 +24,17 @@ public class FireRocket : MonoBehaviour
     //have rocket despawn on collision
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "Enemy")
+        if (collision.gameObject.CompareTag("Enemy"))
         {
             Destroy(this.gameObject);
         }
 
-        else if (collision.gameObject.tag == "Wall")
+        else if (collision.gameObject.CompareTag("Wall"))
         {
             Destroy(this.gameObject);
         }
 
-        else if (collision.gameObject.tag == "Projectille")
+        else if (collision.gameObject.CompareTag("Projectille"))
         {
             Destroy(this.gameObject);
         }

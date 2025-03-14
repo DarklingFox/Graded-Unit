@@ -9,6 +9,7 @@ public class Health : MonoBehaviour
     //Add variables
     public Sprite Healthbar0, Healthbar1, Healthbar2, Healthbar3, Healthbar4, Healthbar5, Healthbar6, Healthbar7, Healthbar8, Healthbar9, Healthbar10;
     Image HealthSprite;
+    SpriteRenderer renderer;
     public int StartingHealth; 
 
     // Start is called before the first frame update
@@ -16,6 +17,8 @@ public class Health : MonoBehaviour
     {
         //get component 
         HealthSprite = GetComponent<Image>();
+        renderer = GetComponent<SpriteRenderer>();
+        
     }
 
     // Update is called once per frame
@@ -26,41 +29,46 @@ public class Health : MonoBehaviour
 
     public void SetSprite(CurrentHealthStage Healthleft)
     {
+        if(HealthSprite == null)
+        {
+            HealthSprite = gameObject.GetComponent<Image>();
+        }
+
         //set sprite by having the int value equal correct sprite
         switch (Healthleft)
         {
             case CurrentHealthStage.Health0:
-                HealthSprite.sprite = Healthbar0;
+                renderer.sprite = Healthbar0;
                 break;
             case CurrentHealthStage.Health1:
-                HealthSprite.sprite = Healthbar1;
+                renderer.sprite = Healthbar1;
                 break;
             case CurrentHealthStage.Health2:
-                HealthSprite.sprite = Healthbar2;
+                renderer.sprite = Healthbar2;
                 break;
             case CurrentHealthStage.Health3:
-                HealthSprite.sprite = Healthbar3;
+                renderer.sprite = Healthbar3;
                 break;
             case CurrentHealthStage.Health4:
-                HealthSprite.sprite = Healthbar4;
+                renderer.sprite = Healthbar4;
                 break;
             case CurrentHealthStage.Health5:
-                HealthSprite.sprite = Healthbar5;
+                renderer.sprite = Healthbar5;
                 break;
             case CurrentHealthStage.Health6:
-                HealthSprite.sprite = Healthbar6;
+                renderer.sprite = Healthbar6;
                 break;
             case CurrentHealthStage.Health7:
-                HealthSprite.sprite = Healthbar7;
+                renderer.sprite = Healthbar7;
                 break;
             case CurrentHealthStage.Health8:
-                HealthSprite.sprite = Healthbar8;
+                renderer.sprite = Healthbar8;
                 break;
             case CurrentHealthStage.Health9:
-                HealthSprite.sprite = Healthbar9;
+                renderer.sprite = Healthbar9;
                 break;
             case CurrentHealthStage.Health10:
-                HealthSprite.sprite = Healthbar10;
+                renderer.sprite = Healthbar10;
                 break;
         }
     }
